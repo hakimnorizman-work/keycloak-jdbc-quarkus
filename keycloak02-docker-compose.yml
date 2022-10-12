@@ -1,0 +1,21 @@
+version: “3.2”
+
+services:
+
+  keycloak-1:
+
+    image: "ivanfranchin/keycloak-clustered:latest"
+    command: start-dev
+    environment:
+      KEYCLOAK_ADMIN: keycloak
+      KEYCLOAK_ADMIN_PASSWORD: password
+      KC_DB: mariadb
+      KC_DB_URL_HOST: 192.168.1.1
+      KC_DB_URL_DATABASE: KEYCLOAK01
+      KC_DB_USERNAME: root
+      KC_DB_PASSWORD: p@ssw0rd
+      KC_LOG_LEVEL: INFO,org.infinispan:DEBUG,org.jgroups:DEBUG
+      JGROUPS_DISCOVERY_EXTERNAL_IP: 192.168.1.3
+    restart: always
+    ports:
+      - "8080:8080"
