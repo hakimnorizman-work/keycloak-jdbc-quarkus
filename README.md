@@ -5,11 +5,11 @@ I created 3 Debian Virtual Machine on VMware Workstation using bridged network. 
 I translated the **docker run** command from [repo](https://github.com/ivangfr/keycloak-clustered) into the **docker-compose.yml** file.
 
 MariaDB Server (192.168.1.1)
-```
+
 - create a database named "KEYCLOAK01"
 - allow remote access for the admin user with:
   "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.1.%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
-```
+
 
 Keycloak01 (192.168.1.2)
 
