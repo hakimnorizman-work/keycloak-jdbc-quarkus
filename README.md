@@ -1,6 +1,6 @@
 # keycloak-jdbc-ivanfranchin
 
-##This is my workaround using ivanfranchin repo at https://github.com/ivangfr/keycloak-clustered
+## This is my workaround using ivanfranchin [repo](https://github.com/ivangfr/keycloak-clustered)
 
 I created 3 Debian Virtual Machine on VMware Workstation using bridged network. **VM01(192.168.1.1) | VM02(192.168.1.2) | VM03(192.168.1.3)**
 
