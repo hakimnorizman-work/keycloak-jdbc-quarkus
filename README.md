@@ -8,7 +8,6 @@ I translated the **docker run** command from [repo](https://github.com/ivangfr/k
 
 
 **MariaDB Server (192.168.1.1)**
-
 - create a database named "KEYCLOAK01"
 - allow remote access for the admin user with:
 ```
@@ -19,7 +18,6 @@ I translated the **docker run** command from [repo](https://github.com/ivangfr/k
 
 
 **Keycloak01 (192.168.1.2)**
-
 - create a directory **/opt/keycloak** and created the following files:
   - [Dockerfile](https://github.com/hakimnorizman-work/keycloak-jdbc-ivanfranchin/blob/main/Dockerfile) on Keycloak01 with ip **192.168.1.2**
   - [cache-ispn-jdbc-ping.xml](https://github.com/hakimnorizman-work/keycloak-jdbc-ivanfranchin/blob/main/cache-ispn-jdbc-ping.xml) 
@@ -28,7 +26,6 @@ I translated the **docker run** command from [repo](https://github.com/ivangfr/k
 
 
 **Keycloak02 (192.168.1.3)**
-
 - create a directory **/opt/keycloak** and created the following files:
   - [Dockerfile](https://github.com/hakimnorizman-work/keycloak-jdbc-ivanfranchin/blob/main/Dockerfile) on Keycloak01 with ip **192.168.1.3**
   - [cache-ispn-jdbc-ping.xml](https://github.com/hakimnorizman-work/keycloak-jdbc-ivanfranchin/blob/main/cache-ispn-jdbc-ping.xml) 
