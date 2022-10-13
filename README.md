@@ -5,8 +5,8 @@ I translated the **docker run** into the **docker-compose.yml** file.
 
 MariaDB Server (192.168.1.1)
 ```
-1. I simply created a database named "KEYCLOAK01"
-2. allow remote access for the admin user with 
+create a database named "KEYCLOAK01"
+allow remote access for the admin user with 
    "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.1.%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
 ```
 
