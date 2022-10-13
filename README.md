@@ -13,6 +13,7 @@ I translated the **docker run** command from [repo](https://github.com/ivangfr/k
 - allow remote access for the admin user with:
 ```
   GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.1.%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
 ```
 
 
