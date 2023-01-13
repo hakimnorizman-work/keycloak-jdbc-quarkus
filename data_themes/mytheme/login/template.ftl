@@ -13,7 +13,7 @@
         </#list>
     </#if>
     <title>Welcome To Hakim Keycloak</title>
-    <link rel="icon" href="${url.resourcesPath}/img/UTHM.ico" />
+    <link rel="icon" href="${url.resourcesPath}/img/agt_web.ico" />
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
             <link href="${url.resourcesCommonPath}/${style}" rel="stylesheet" />
