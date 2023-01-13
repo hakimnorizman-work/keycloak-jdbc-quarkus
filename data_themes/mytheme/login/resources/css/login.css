@@ -6,7 +6,7 @@
 }
 
 .login-pf body {
-    background: url("../img/R.jpg");
+    background: url("../img/R.jpg"); /* Change the Background Image */
     margin: 0;
     height: full;
     background-size: cover;
@@ -77,7 +77,7 @@ a#kc-current-locale-link::after {
 }
 
 div.kc-logo-text {
-    background-image: url(../img/R.png);
+    background-image: url(../img/R.png); /* Change the Logo for HTML TITTLE */
     background-repeat: no-repeat;
     height: 100px;
     width: 300px;
