@@ -21,8 +21,8 @@
         xsi:schemaLocation="urn:infinispan:config:11.0 http://www.infinispan.org/schemas/infinispan-config-11.0.xsd"
         xmlns="urn:infinispan:config:11.0">
     <jgroups>
-          <stack name="mariadb-jdbc-ping-tcp" extends="tcp">
-            <TCP external_addr="${env.JGROUPS_DISCOVERY_EXTERNAL_IP:127.0.0.1}" />
+        <stack name="mariadb-jdbc-ping-tcp" extends="tcp">
+            <TCP external_addr="${env.JGROUPS_DISCOVERY_EXTERNAL_IP}" bind_addr="0.0.0.0" bind_port="7600" />
             <JDBC_PING connection_driver="com.mysql.jdbc.Driver"
                        connection_username="${env.KC_DB_USERNAME}" connection_password="${env.KC_DB_PASSWORD}"
                        connection_url="jdbc:mysql://${env.KC_DB_URL_HOST}/${env.KC_DB_URL_DATABASE}"
