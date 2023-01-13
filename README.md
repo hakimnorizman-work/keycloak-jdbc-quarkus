@@ -35,7 +35,14 @@ I translated the **docker run** command from [repo](https://github.com/ivangfr/k
 
 **The command I run on both Keycloak Hosts**
 ```
-docker build -t ivanfranchin/keycloak-clustered:latest .
+docker build -t yourdesiredimage/image:latest .
 
 docker-compose up -d 
 ```
+
+**The changes you can do in themes file**
+- theme.properties /data_themes/mytheme/login/
+- template.ftl /data_themes/mytheme/login/
+- login.css in /data_themes/mytheme/login/resources/css/
+
+Add your pictures on /data_themes/mytheme/login/resources/img
