@@ -12,8 +12,8 @@
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
         </#list>
     </#if>
-    <title>Welcome To Hakim Keycloak</title>
-    <link rel="icon" href="${url.resourcesPath}/img/agt_web.ico" />
+    <title>Welcome To Hakim Keycloak</title> <!-- Change The Header tittle -->
+    <link rel="icon" href="${url.resourcesPath}/img/agt_web.ico" /> <!-- Change the Header Icon -->
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
             <link href="${url.resourcesCommonPath}/${style}" rel="stylesheet" />
