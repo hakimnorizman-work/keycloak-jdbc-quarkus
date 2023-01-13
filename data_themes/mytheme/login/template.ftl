@@ -12,7 +12,7 @@
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
         </#list>
     </#if>
-    <title>Welcome to SSO UTHM</title>
+    <title>Welcome To Hakim Keycloak</title>
     <link rel="icon" href="${url.resourcesPath}/img/UTHM.ico" />
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
